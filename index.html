@@ -1,9 +1,223 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ShpiderWeb</title>
+	<title>IT homework</title>
+
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			overflow: auto;
+			background-image: url('stars.jpg');
+		}
+
+		header{
+			background-color: #3498db;
+			padding: 10px;
+			margin: 0;
+			overflow: hidden;
+		}
+		header h1{
+			font-family: arial;
+			margin: 0;
+			padding: 10px;
+			font-size: 50px;
+		}
+		header ul li {
+			list-style: none;
+			margin: 0 10px 0 10px;
+			display: inline-block;
+			position: relative;
+		}
+		header ul li a{
+			font-family: comic sans ms;
+			font-size: 25px;
+			text-decoration: none;
+			color: black;
+			text-transform: uppercase;
+			padding: 20px;
+			transition: 1s;
+		}
+		header ul li a:hover{
+			color: #ecf0f1;
+			font-size: 30px;
+		}
+		header ul li a:before{
+			display: block;
+			height: 5px;
+			width: 0%;
+			background-color: black;
+			position: absolute;
+			content: '';
+			transition: width 0.5s;
+		}
+		header ul li a:hover:before{
+			width: 100%;
+		}
+
+		header ul li a:after{
+			display: block;
+			height: 5px;
+			width: 0%;
+			background-color: black;
+			position: absolute;
+			content: '';
+			transition: width 0.5s;
+		}
+		header ul li a:hover:after{
+			width: 100%;
+		}
+		.box{
+			background-color: #00a8ff;
+			width: 90%;
+			height: 250px;
+			margin: 3%;
+			transition: 1s;
+		}
+		.discount h1{
+			margin: 0;
+			color: black;
+		}
+		.discount img{
+			margin: 10px;
+		}
+		.discount p{
+			font-family: arial;
+			font-size: 20px; 
+			margin: 10px;
+			float: left;
+			color: black;
+		}
+		.box:hover{
+			transform: scale(1.05);
+			box-shadow: 5px 5px 5px black;
+			outline: 3px solid black;
+		}
+		.manual-support p{
+			font-size: 20px;
+			font-family: impact;
+			float: right;
+			margin: 30px;
+		}
+		.manual-support .name{
+			float: left;
+		}
+		.container{
+			width: 150px;
+			height: 200px;
+			position: relative;
+			background: none;
+		}
+		.container:hover{
+			outline: 0px;
+			box-shadow: none;
+		}
+		.card{
+			position: absolute;
+			transform-style: preserve-3d;
+			transition: all 1s ease;
+			background: none;
+			width: 100%;
+			height: 100%;
+			
+		}
+		.card:active{
+			transform: rotateY(180deg);
+		}
+		.front{
+			position: absolute;
+			backface-visibility: hidden;
+			background-color: white;
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+		}
+		.back{
+			position: absolute;
+			backface-visibility: hidden;
+			background-color: black;
+			transform: rotateY(180deg);
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+			color: white;
+		}
+		footer{
+			top:100%;
+			background-color: #3498db;
+			height: 100px;
+			font-family: arial;
+			font-size: 30px;
+			outline: 5px solid black;
+			margin: 0;
+		}
+		footer a{
+			margin: 10px;
+			margin-bottom: 0; 
+			text-decoration: none;
+			color: black;
+			float: left;
+			display: block;
+			transition: 1s;
+		}
+		footer a:hover{
+			font-size: 50px;
+			margin-bottom: 0; 
+		}
+		footer p{
+			float: right;
+			margin: 0;
+		}
+	</style>
+
 </head>
+
 <body>
 
+	<header>
+		<center><h1>🔨Tech Support🖥️</h1></center>
+		<ul>
+			<li><a href="">home</a></li>
+			<li><a href="ud.html">support</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<center>
+			<a href="ds.html">
+			<div class="discount box">
+				<h1>90% OFF OFFER</h1><br>
+				<img src="computer1.jpg" alt="computer" width="200px">
+				<p>Fix your computer with a<br>90% off discount with the code: ITCLASS<br>1 code 1 family, with up to 10 people</p>
+			</div>
+			</a>
+			<div class="manual-support box">
+				<h1>Manual Support</h1>
+				<img src="indian.jpg" alt="indian" width="150px">
+				<p>We will have an Indian Customer Support waiting for you<br>24/7 helping you solve your virus problems<br>Call 911 for manual support and get a 15% discount today</p>
+				<p class="name">This Indian guy right here is Lum Yeh Mo Yeh<br>He's going to be your assistant today<br>He will be angry if you call him anything else</p>
+			</div>
+			<div class="container box">
+				<div class="card">
+					<div class="front">
+					Click and hold to reveal big secret
+					</div>
+					<div class="back">
+					This is a scam
+					</div>
+				</div>
+			</div>
+		</center>
+	</main>
+
+	<footer>
+		<center>
+			<a href="">Home</a>
+			<a href="ud.html">Support</a><br>
+			<p>Microsoft Inc. Copyright 2021.</p>
+		</center>
+	</footer>
+
 </body>
+
 </html>

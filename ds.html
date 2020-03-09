@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IT homework</title>
+
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			overflow: auto;
+			background-image: url('stars.jpg');
+		}
+
+		header{
+			background-color: #3498db;
+			padding: 10px;
+			margin: 0;
+			overflow: hidden;
+		}
+		header h1{
+			font-family: arial;
+			margin: 0;
+			padding: 10px;
+			font-size: 50px;
+		}
+		header ul li {
+			list-style: none;
+			margin: 0 10px 0 10px;
+			display: inline-block;
+			position: relative;
+		}
+		header ul li a{
+			font-family: comic sans ms;
+			font-size: 25px;
+			text-decoration: none;
+			color: black;
+			text-transform: uppercase;
+			padding: 20px;
+			transition: 1s;
+		}
+		header ul li a:hover{
+			color: #ecf0f1;
+			font-size: 30px;
+		}
+		header ul li a:before{
+			display: block;
+			height: 5px;
+			width: 0%;
+			background-color: black;
+			position: absolute;
+			content: '';
+			transition: width 0.5s;
+		}
+		header ul li a:hover:before{
+			width: 100%;
+		}
+
+		header ul li a:after{
+			display: block;
+			height: 5px;
+			width: 0%;
+			background-color: black;
+			position: absolute;
+			content: '';
+			transition: width 0.5s;
+		}
+		header ul li a:hover:after{
+			width: 100%;
+		}
+		.box{
+			background-color: #00a8ff;
+			width: 90%;
+			height: 250px;
+			margin: 3%;
+			transition: 1s;
+		}
+		.discount h1{
+			margin: 0;
+			color: black;
+			font-size: 50px;
+		}
+		.discount input{
+			width: 10%;
+			height: 40px;
+		}
+		.discount button{
+			width: 100px;
+			height: 40px;
+		}
+		.box:hover{
+			transform: scale(1.05);
+			box-shadow: 5px 5px 5px black;
+			outline: 3px solid black;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<header>
+		<center><h1>🔨Tech Support🖥️</h1></center>
+		<ul>
+			<li><a href="index.html">home</a></li>
+			<li><a href="">support</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<center>
+			<div class="discount box">
+				<h1>Code:</h1>
+				<input type="text">
+				<button>Get Discount</button>
+			</div>
+		</center>
+	</main>
+
+</body>
+
+</html>
